@@ -1,0 +1,12 @@
+.mantine-button-custom-root {
+  transform: translateY(0px) !important;
+
+  &:active:not([data-disabled]) {
+    filter: brightness(0.95);
+  }
+
+  &[data-disabled] {
+    color: var(--disabled-color-foreground);
+    background-color: var(--disabled-color-background);
+  }
+}
