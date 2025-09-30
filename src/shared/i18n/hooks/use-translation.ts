@@ -4,7 +4,7 @@ import { useParams } from 'next/navigation';
 import { useTranslation as useTranslationReact } from 'react-i18next';
 import type { I18nLang, NSType } from '@shared/i18n/types/i18n.types';
 import { isServer } from '@shared/utils/is-server';
-import { isSupportedLanguage } from '../utils/is-supported-language';
+import { isSupportedLanguage } from '../utils/supported-language';
 
 export const useTranslation = <N extends NSType>(ns: N | N[], lng?: I18nLang, options?: object) => {
   const original = useTranslationReact<N | N[]>(ns, options);

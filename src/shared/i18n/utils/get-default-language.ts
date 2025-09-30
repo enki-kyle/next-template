@@ -1,5 +1,5 @@
 import { I18nLang } from '../types/i18n.types';
-import { isSupportedLanguage } from './is-supported-language';
+import { isSupportedLanguage } from './supported-language';
 
 export const getDefaultI18nLang = (): I18nLang => {
   const defaultLang = process.env.NEXT_PUBLIC_DEFAULT_LANGUAGE;

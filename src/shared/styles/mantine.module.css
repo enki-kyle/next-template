@@ -1,0 +1,6 @@
+.button__root {
+  &:active:not([data-disabled]) {
+    filter: brightness(0.95);
+    transform: translateY(0px) !important;
+  }
+}

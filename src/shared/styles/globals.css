@@ -1,45 +1,29 @@
 @import 'tailwindcss';
+@import './theme.css';
+@import './typography.css';
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --text-normal: #4c4c4c;
+  --text-strong: #111827;
+  --text-neutral: #46474b;
+  --text-sub: #6b7280;
+  --text-light: #9ca3af;
+  --hover: #11182708;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html[data-color-scheme='dark'] {
+  --background: #121212;
+  --text-normal: #e5e5e5;
+  --text-strong: #ffffff;
+  --text-neutral: #cfcfcf;
+  --text-sub: #a0a0a0;
+  --text-light: #6f6f6f;
+  --hover: #ffffff08;
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@theme inline {
-  --color-*: initial;
-
-  --color-ocean-blue-50: var(--mantine-color-ocean-blue-0);
-  --color-ocean-blue-100: var(--mantine-color-ocean-blue-1);
-  --color-ocean-blue-200: var(--mantine-color-ocean-blue-2);
-  --color-ocean-blue-300: var(--mantine-color-ocean-blue-3);
-  --color-ocean-blue-400: var(--mantine-color-ocean-blue-4);
-  --color-ocean-blue-500: var(--mantine-color-ocean-blue-5);
-  --color-ocean-blue-600: var(--mantine-color-ocean-blue-6);
-  --color-ocean-blue-700: var(--mantine-color-ocean-blue-7);
-  --color-ocean-blue-800: var(--mantine-color-ocean-blue-8);
-  --color-ocean-blue-900: var(--mantine-color-ocean-blue-9);
-
-  --color-bright-pink-50: var(--mantine-color-bright-pink-0);
-  --color-bright-pink-100: var(--mantine-color-bright-pink-1);
-  --color-bright-pink-200: var(--mantine-color-bright-pink-2);
-  --color-bright-pink-300: var(--mantine-color-bright-pink-3);
-  --color-bright-pink-400: var(--mantine-color-bright-pink-4);
-  --color-bright-pink-500: var(--mantine-color-bright-pink-5);
-  --color-bright-pink-600: var(--mantine-color-bright-pink-6);
-  --color-bright-pink-700: var(--mantine-color-bright-pink-7);
-  --color-bright-pink-800: var(--mantine-color-bright-pink-8);
-  --color-bright-pink-900: var(--mantine-color-bright-pink-9);
+  color: var(--text-normal);
+  font-family: var(--font-display);
 }

@@ -1,0 +1,105 @@
+@theme {
+  --font-display: 'Inter', 'Interop', system-ui, -apple-system, sans-serif;
+}
+
+@font-face {
+  font-family: 'Interop';
+  src: url('../../../public/fonts/Interop-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+AC00-D7A3, U+1100-11FF, U+3130-318F, U+A960-A97F, U+D7B0-D7FF;
+}
+
+@font-face {
+  font-family: 'Interop';
+  src: url('../../../public/fonts/Interop-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+AC00-D7A3, U+1100-11FF, U+3130-318F, U+A960-A97F, U+D7B0-D7FF;
+}
+
+@font-face {
+  font-family: 'Interop';
+  src: url('../../../public/fonts/Interop-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+AC00-D7A3, U+1100-11FF, U+3130-318F, U+A960-A97F, U+D7B0-D7FF;
+}
+
+@font-face {
+  font-family: 'Interop';
+  src: url('../../../public/fonts/Interop-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+AC00-D7A3, U+1100-11FF, U+3130-318F, U+A960-A97F, U+D7B0-D7FF;
+}
+
+@utility typo-h1 {
+  font-size: 28px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+@utility typo-h2 {
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+@utility typo-subtitle1 {
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+@utility typo-subtitle2 {
+  font-size: 14px;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+@utility typo-body1 {
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+@utility typo-body2 {
+  font-size: 14px;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+@utility typo-paragraph1 {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+@utility typo-paragraph2 {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+@utility typo-button1 {
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+@utility typo-button2 {
+  font-size: 14px;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+@utility typo-caption {
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+}

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { LANGUAGE_COOKIE_NAME } from '../i18n/i18n.constants';
 import { getDefaultI18nLang } from '../i18n/utils/get-default-language';
-import { isSupportedLanguage } from '../i18n/utils/is-supported-language';
+import { isSupportedLanguage } from '../i18n/utils/supported-language';
 
 export const i18nMiddleware = (request: NextRequest) => {
   const path = request.nextUrl.pathname;
